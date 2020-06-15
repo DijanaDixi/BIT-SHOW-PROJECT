@@ -42,7 +42,7 @@ const mainModule = ((data, ui)=>{
 
   const initSinglePage = ()=>{
       const id = localStorage.getItem("id");
-
+  console.log(id)
       $.get({
           url: `https://api.tvmaze.com/shows/${id}?embed[]=cast&embed[]=seasons`
       })
